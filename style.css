@@ -1,0 +1,340 @@
+body{
+    font-family: 'Questrial', sans-serif;
+}
+
+.m-navbar{
+    z-index: 1000;
+    background: white;
+}
+
+.m-navbar img{
+    display: inline-block;
+    width: 100%;
+}
+
+.underline{
+    border-bottom: 1px solid black !important;
+}
+
+.m-navbar .container{
+    padding: 20px 0;
+}
+
+.external-links{
+    top: 40%;
+    right: 15px;
+    width: 100%;
+    text-align: right;
+}
+
+.external-links a{
+    margin-left: 5%;
+    display: inline-block;
+}
+
+.max-width-80{
+    max-width: 80%;
+}
+
+.post{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.post::before{
+    content: '.';
+    color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.post1{
+    background-image: url('images/microphone.webp');
+}
+
+.post2{
+    background-image: url('images/child.webp');
+}
+
+.post3{
+    background-image: url('images/arm-wrestling.webp');
+}
+
+.post4{
+    background-image: url('images/pedestrian-sign.jpg');
+}
+
+.post5{
+    background-image: url('images/matt.webp');
+}
+
+.post6{
+    background-image: url('images/rollercoaster.jpg');
+}
+
+.post span{
+    position: absolute;
+}
+
+.post > .date{
+    top: 15%;
+    left: 10%;
+    right: 10%;
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.65)
+}
+
+.post > .title{
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+    font-size: 1.7em;
+    color: white;    
+}
+
+.bio-container{
+    background: black;
+    color: white;
+}
+
+.bio-image{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.bio-container p{
+    font-size: 1.2em;
+}
+
+.bio-container .cta{
+    margin: 10% 15% 0 15%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.contact-me .col-12{
+    font-size: 2em;
+}
+
+.contact-me .links a{
+    margin: 0 10%;
+}
+
+.show-sm, .show-md, .show-lg{
+    display: none;
+}
+
+.article-container.py-5{
+    margin-bottom: 5%;
+}
+
+.article-container article > p{
+    font-size: 1.5em;
+    font-family: 'Raleway', 'Questrial', sans-serif;
+    margin-top: 5%;
+}
+
+.article-container article > p.date{
+    font-size: 1.0em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.article-container article > p.title {
+    font-size: 3.2em;
+    margin: 8% 0;
+}
+
+.article-container article > p.subtitle {
+    font-size: 1.9em;
+    font-weight: bold;
+    margin: 8% 0 2% 0;
+}
+
+.article-container article > p.accented {
+    font-size: 2em;
+    border-left: black solid 2px;
+    padding-left: 3%;
+    margin: 8% 0;
+    font-family: 'Questrial', 'Raleway', sans-serif;
+}
+
+.article-container article > p > span {
+    font-weight: bold;
+}
+
+.side-picture{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: contain;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 100%;
+}
+
+.side-microphone{
+    background-image: url('images/microphone.webp');
+}
+
+.side-chairs{
+    background-image: url('images/chairs.webp');
+}
+
+.side-young-couple{
+    background-image: url('images/young-couple.webp');
+}
+
+.side-old-couple{
+    background-image: url('images/old-couple.webp');
+}
+
+.side-fists{
+    background-image: url('images/fists.webp');
+}
+
+.side-arm-wrestling{
+    background-image: url('images/arm-wrestling.webp');
+}
+
+.side-rain{
+    background-image: url('images/rain.webp');
+}
+
+.side-graph{
+    background-image: url('images/graph.webp');
+}
+
+.side-train-station{
+    background-image: url('images/train-station.webp');
+}
+
+.side-marko{
+    background-image: url('images/marko.webp');
+}
+
+.side-rollercoaster{
+    background-image: url('images/rollercoaster.webp');
+}
+
+.side-debate{
+    background-image: url('images/debate.webp');
+}
+
+.responsive-img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media(min-width: 576px){
+    .show-sm{
+        display: block;
+    }
+
+    .hide-sm{
+        display: none;
+    }
+
+    .bio-container .cta{
+        margin: 0 15% 0 15%;
+    }
+}
+
+@media(min-width: 502px) and (max-width: 767px){
+    .post > .date{
+        font-size: 1.9em;
+    }
+
+    .post > .title{
+        font-size: 2.7em;
+    }
+
+    .bio-container p{
+        font-size: 2em;
+    }
+
+    .bio-container .cta{
+        font-size: 2.3em;
+    }
+}
+
+@media(max-width: 767px){
+    .article-container{
+        margin-top: 0px;
+    }
+
+    .post{
+        padding-top: 70%;
+    }
+
+    .bio-container p{
+        margin-bottom: 10%;
+    }
+
+    .bio-container .cta{
+        margin: 5% 0 0 0;
+    }
+}
+
+@media(min-width: 768px){
+    .hide-md{
+        display: none;
+    }
+    
+    .show-md{
+        display: block;
+    }
+
+    .post > .date{
+        font-size: 0.9em;
+    }
+
+    .post > .title{
+        font-size: 1.4em;
+    }
+
+    .contact-me .links a{
+        margin: 8% 10%;
+    }
+    
+    .side-picture{
+        padding-top: unset;
+    }
+}
+
+@media(min-width: 992px){
+    .bio-container .cta{
+        margin: 5% 10% 0 10%;
+    }
+
+    .show-lg{
+        display: block;
+    }
+
+    .hide-lg{
+        display: none;
+    }
+
+    .article-container{
+        margin-top: 170px;
+    }
+
+    .m-navbar .container{
+        padding: 20px 0 0 0;
+    }
+}
